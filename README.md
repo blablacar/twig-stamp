@@ -1,5 +1,7 @@
 # Twig Stamp
 
+Put a placeholder in a base template, fill it from anywhere.
+
 ## Idea
 
 One of our front mates needs to dump SVG sprites on our base layout, but don't want to dump all our icons: only the SVGs that are actually used
@@ -130,7 +132,7 @@ Lorem ipsum dolor sit amet, eu vel aliquam adversarium...
 ## Installation
 
 ```sh
-composer require ninsuo/twig-stamp
+composer require blablacar/twig-stamp
 ```
 
 ## License
