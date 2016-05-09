@@ -1,0 +1,12 @@
+{% stamp 'svg' %}
+<html>
+    <body>
+        {% stamp_dump 'svg' %}
+
+        <h1>Welcome! {{ stamp_use('svg', 'eye') }}</h1>
+
+        {{ include('include.twig') }}
+
+    </body>
+</html>
+{% endstamp %}

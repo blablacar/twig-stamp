@@ -1,0 +1,21 @@
+{
+    "name": "blablacar/twig-stamp",
+    "type": "library",
+    "description": "Put a stamp placeholder in a base template, fill it from anywhere.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alain Tiemblo",
+            "email": "alain.tiemblo@blablacar.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^1.20"
+    },
+    "autoload": {
+         "psr-4": {
+             "Blablacar\\Twig\\": "src",
+             "Demo\\": "demo"
+        }
+    }
+}

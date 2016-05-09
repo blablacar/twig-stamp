@@ -1,0 +1,9 @@
+<svg>
+    {% for svg in svgs %}
+        <symbol id="{{ svg.iconId }}" viewBox="{{ svg.viewBox }}">
+            {% for contents in svg.contents %}
+                <path d="{{ contents }}" />
+            {% endfor %}
+        </symbol>
+    {% endfor %}
+</svg>
