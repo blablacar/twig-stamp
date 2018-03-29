@@ -48,7 +48,13 @@ class StampExtension extends \Twig_Extension
         ];
     }
 
-    public function getName() {
-        return 'stamp';
+    /**
+     * Backward compatibility with Twig 1.x
+     *
+     * @return string
+     */
+    public function getName()
+    {
+        return __CLASS__;
     }
 }

@@ -2,6 +2,8 @@
 
 namespace Blablacar\Twig\Node;
 
+use Blablacar\Twig\Extension\StampExtension;
+
 class StampNode extends \Twig_Node
 {
     public function __construct($name, $aboveDumps, $belowDump, $lineno, $tag)
@@ -32,7 +34,7 @@ class StampNode extends \Twig_Node
         // echo $this->env->getExtension('stamp')->dumpStamp('svg');
         $compiler
             ->addDebugInfo($this)
-            ->write("echo \$this->env->getExtension('stamp')->dumpStamp(")
+            ->write("echo \$this->env->getExtension('" . StampExtension::class . "')->dumpStamp(")
             ->string($this->getAttribute('name'))
             ->raw(");\n")
         ;
